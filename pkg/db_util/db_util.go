@@ -22,10 +22,10 @@ type dbParams struct {
 
 func defaultDbParams() dbParams {
 	return dbParams{
-		Host:     "localhost",
+		Host:     "101.132.122.127",
 		Port:     5432,
-		User:     "postgres",
-		Password: "postgres",
+		User:     "mofitserver",
+		Password: "dbpassword",
 	}
 }
 
