@@ -6,7 +6,7 @@ jobs:
     - image: circleci/postgres:9.6-alpine
       environment: # environment variables for primary container
         POSTGRES_USER: postgres
-    working_directory: /Users/xulei/www_roots/go-kit
+    working_directory:  /go/src/github.com/xulei1931/go-kit
     steps:
     - checkout
     - run:
@@ -24,5 +24,5 @@ jobs:
         name: build and push Docker images
         shell: /bin/bash
         command: |
-          chmod +x ../build.sh
-          ../build.sh
+          chmod +x ./build.sh
+          ./build.sh
