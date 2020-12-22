@@ -2,8 +2,8 @@
 
 set -eo pipefail
 
-IMAGE_PREFIX='g1g1'
-STABLE_TAG='0.2'
+IMAGE_PREFIX='x1x1'
+STABLE_TAG='0.3'
 
 TAG="${STABLE_TAG}.${CIRCLE_BUILD_NUM}"
 ROOT_DIR="$(pwd)"
